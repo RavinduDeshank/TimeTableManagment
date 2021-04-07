@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{226B17DF-8BED-4D03-9370-A1B65107F72A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TimeTableManagment</RootNamespace>
+    <AssemblyName>TimeTableManagment</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.35\lib\net461\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.113.1\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AssignTimeAndDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AssignTimeAndDay.Designer.cs">
+      <DependentUpon>AssignTimeAndDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AvailabilityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AvailabilityForm.Designer.cs">
+      <DependentUpon>AvailabilityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GenerateTimeTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GenerateTimeTable.Designer.cs">
+      <DependentUpon>GenerateTimeTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LecturerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LecturerForm.Designer.cs">
+      <DependentUpon>LecturerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LocationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LocationForm.Designer.cs">
+      <DependentUpon>LocationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RoomForm.Designer.cs">
+      <DependentUpon>RoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SessionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SessionForm.Designer.cs">
+      <DependentUpon>SessionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StudentForm.Designer.cs">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubjectForm.Designer.cs">
+      <DependentUpon>SubjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TagForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TagForm.Designer.cs">
+      <DependentUpon>TagForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WorkingDaysForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WorkingDaysForm.Designer.cs">
+      <DependentUpon>WorkingDaysForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WorkingHoursForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WorkingHoursForm.Designer.cs">
+      <DependentUpon>WorkingHoursForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StatisticsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StatisticsForm.Designer.cs">
+      <DependentUpon>StatisticsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AssignTimeAndDay.resx">
+      <DependentUpon>AssignTimeAndDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AvailabilityForm.resx">
+      <DependentUpon>AvailabilityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GenerateTimeTable.resx">
+      <DependentUpon>GenerateTimeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LecturerForm.resx">
+      <DependentUpon>LecturerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LocationForm.resx">
+      <DependentUpon>LocationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RoomForm.resx">
+      <DependentUpon>RoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SessionForm.resx">
+      <DependentUpon>SessionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StatisticsForm.resx">
+      <DependentUpon>StatisticsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StudentForm.resx">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubjectForm.resx">
+      <DependentUpon>SubjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TagForm.resx">
+      <DependentUpon>TagForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WorkingDaysForm.resx">
+      <DependentUpon>WorkingDaysForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WorkingHoursForm.resx">
+      <DependentUpon>WorkingHoursForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\icons8-day-view-32 %282%291.png" />
+    <None Include="Resources\icons8_add_64.png" />
+    <None Include="Resources\icons8_add_new_64.png" />
+    <None Include="Resources\icons8_edit_property_64.png" />
+    <None Include="Resources\icons8_delete_64.png" />
+    <None Include="Resources\icons8_edit_property_641.png" />
+    <None Include="Resources\icons8_erase_48.png" />
+    <None Include="Resources\icons8_chart_60px.png" />
+    <None Include="Resources\icons8_minus.ico" />
+    <None Include="Resources\icons8_ok_1.ico" />
+    <None Include="Resources\icons8_plus_3.ico" />
+    <None Include="Resources\icons8_collapse_arrow.ico" />
+    <None Include="Resources\icons8_expand_arrow_1.ico" />
+    <None Include="Resources\icons8_expand_arrow_2.ico" />
+    <None Include="Resources\icons8_expand_arrow_3.ico" />
+    <None Include="Resources\icons8_search.ico" />
+    <None Include="Resources\icons8_broom.ico" />
+    <None Include="Resources\icons8_time_machine_32px.png" />
+    <None Include="Resources\icons8_time_machine_32px_1.png" />
+    <Content Include="Resources\icon-logo.png" />
+    <Content Include="Resources\icons8_content_32px.png" />
+    <Content Include="TimeTable.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-day-view-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-day-view-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-day-view-32 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hourglass-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-teacher-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-male-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-physics-book-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tag-window-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-marker-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-more-details-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-available-updates-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-room-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-statistics-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-macos-close-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.113.1\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.113.1\build\net46\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.113.1\build\net46\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.113.1\build\net46\System.Data.SQLite.Core.targets'))" />
+  </Target>
+</Project>
