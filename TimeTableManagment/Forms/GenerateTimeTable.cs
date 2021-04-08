@@ -1225,7 +1225,6 @@ namespace TimeTableManagment.Forms
             printer.PrintDataGridView(dataGridView7);
 
            
-
         }
 
         private void clearFieldsbutton_Click(object sender, EventArgs e)
