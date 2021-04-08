@@ -235,10 +235,10 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.txtSearch);
             this.panel2.Controls.Add(this.tblSessions);
-            this.panel2.Location = new System.Drawing.Point(18, 206);
+            this.panel2.Location = new System.Drawing.Point(57, 252);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(862, 263);
+            this.panel2.Size = new System.Drawing.Size(823, 217);
             this.panel2.TabIndex = 19;
             // 
             // label9
@@ -247,7 +247,7 @@
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Image = global::TimeTableManagment.Properties.Resources.icons8_search;
             this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label9.Location = new System.Drawing.Point(102, 37);
+            this.label9.Location = new System.Drawing.Point(68, 4);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.MaximumSize = new System.Drawing.Size(112, 20);
             this.label9.MinimumSize = new System.Drawing.Size(79, 20);
@@ -261,7 +261,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(551, 35);
+            this.label14.Location = new System.Drawing.Point(517, 2);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(152, 24);
@@ -272,7 +272,7 @@
             // 
             this.panel3.Controls.Add(this.btnClr);
             this.panel3.Controls.Add(this.lblDisSes);
-            this.panel3.Location = new System.Drawing.Point(555, 74);
+            this.panel3.Location = new System.Drawing.Point(521, 41);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(283, 161);
@@ -297,7 +297,7 @@
             // lblDisSes
             // 
             this.lblDisSes.AutoSize = true;
-            this.lblDisSes.Location = new System.Drawing.Point(11, 10);
+            this.lblDisSes.Location = new System.Drawing.Point(13, 9);
             this.lblDisSes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDisSes.MaximumSize = new System.Drawing.Size(262, 138);
             this.lblDisSes.MinimumSize = new System.Drawing.Size(262, 138);
@@ -309,12 +309,12 @@
             // txtSearch
             // 
             this.txtSearch.ForeColor = System.Drawing.Color.Black;
-            this.txtSearch.Location = new System.Drawing.Point(185, 39);
+            this.txtSearch.Location = new System.Drawing.Point(151, 6);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearch.MaximumSize = new System.Drawing.Size(282, 26);
             this.txtSearch.MinimumSize = new System.Drawing.Size(282, 26);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(282, 20);
+            this.txtSearch.Size = new System.Drawing.Size(282, 26);
             this.txtSearch.TabIndex = 1;
             this.toolTip1.SetToolTip(this.txtSearch, "Search by Lecturer/Subject/Subject Code/Group ID/Sub Group ID/No. of Students/Dur" +
         "ation");
@@ -326,7 +326,7 @@
             this.tblSessions.AllowUserToDeleteRows = false;
             this.tblSessions.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.tblSessions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tblSessions.Location = new System.Drawing.Point(43, 74);
+            this.tblSessions.Location = new System.Drawing.Point(9, 41);
             this.tblSessions.Margin = new System.Windows.Forms.Padding(2);
             this.tblSessions.Name = "tblSessions";
             this.tblSessions.ReadOnly = true;
