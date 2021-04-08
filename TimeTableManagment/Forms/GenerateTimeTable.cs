@@ -211,9 +211,6 @@ namespace TimeTableManagment.Forms
         }
 
 
-
-      
-
         private void generateTimeTblebutton_Click(object sender, EventArgs e)
         {
             
@@ -253,13 +250,8 @@ namespace TimeTableManagment.Forms
                         MessageBox.Show("Please Select WeekDay or Weekend", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         type = false;
 
+                        }
                     }
-                    }
-
-
-
-
-
 
                 }
                 else if (RoomradioButton.Checked)
@@ -315,33 +307,26 @@ namespace TimeTableManagment.Forms
                         generateTimeTableForGroupWeekDay(groupID);
                         }
                         else
-                      if (weekEndradioButton.Checked)
+                        if (weekEndradioButton.Checked)
                         {
                         changeVisibility();
                         generateTimeTableForGroupWeekEnd(groupID);
                         }
                         else
-                    {
+                        {
                         MessageBox.Show("Please Select WeekDay or Weekend", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         type = false;
 
-                    }
+                        }
+                     }
+
+
                 }
-
-
-            }
             else
             {
                 MessageBox.Show("Please Fill All The Fields", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 type = false;
             }
-
-            //}
-
-
-
-
-
 
         }
 

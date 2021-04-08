@@ -206,17 +206,17 @@ namespace TimeTableManagment.Forms
 
         private void Group_Validating(object sender, CancelEventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox2.Text))
-            {
-                e.Cancel = false;
-                textBox3.Focus();
-                errorProvider1.SetError(textBox3, "This feild should not be left blank!");
-            }
-            else
-            {
+            //if (string.IsNullOrEmpty(textBox2.Text))
+            //{
+            //    e.Cancel = false;
+            //    textBox3.Focus();
+            //    errorProvider1.SetError(textBox3, "This feild should not be left blank!");
+            //}
+            //else
+            //{
                 e.Cancel = false;
                 errorProvider1.SetError(textBox2, "");
-            }
+            //}
         }
 
         private void textBox3_KeyPress(object sender, KeyPressEventArgs e)

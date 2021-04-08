@@ -291,7 +291,7 @@ namespace TimeTableManagment
         private void Reset()
         {
             DisableButton();
-            lblTitle.Text = "Home";
+            lblTitle.Text = "Welcome \nTime Table Management System";
             titleBarPanel.BackColor = Color.FromArgb(50, 50, 70);
             currentButton = null;
             btnClose.Visible = false;
@@ -354,6 +354,7 @@ namespace TimeTableManagment
             ExecuteQuery(deleteQuery);
             
             MessageBox.Show("Records Sucessfully Deleted", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            LoadRoomData();
         }
 
         private void lblStu_Click(object sender, EventArgs e)

@@ -79,7 +79,7 @@
             // txtSubName
             // 
             this.txtSubName.Location = new System.Drawing.Point(182, 65);
-            this.txtSubName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSubName.Margin = new System.Windows.Forms.Padding(2);
             this.txtSubName.Name = "txtSubName";
             this.txtSubName.Size = new System.Drawing.Size(172, 20);
             this.txtSubName.TabIndex = 1;
@@ -106,7 +106,7 @@
             "5",
             "6"});
             this.cmbYear.Location = new System.Drawing.Point(182, 115);
-            this.cmbYear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbYear.Margin = new System.Windows.Forms.Padding(2);
             this.cmbYear.Name = "cmbYear";
             this.cmbYear.Size = new System.Drawing.Size(118, 21);
             this.cmbYear.TabIndex = 3;
@@ -166,7 +166,7 @@
             // numTuteHr
             // 
             this.numTuteHr.Location = new System.Drawing.Point(452, 162);
-            this.numTuteHr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numTuteHr.Margin = new System.Windows.Forms.Padding(2);
             this.numTuteHr.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -180,7 +180,7 @@
             // numLecHr
             // 
             this.numLecHr.Location = new System.Drawing.Point(182, 162);
-            this.numLecHr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numLecHr.Margin = new System.Windows.Forms.Padding(2);
             this.numLecHr.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -194,7 +194,7 @@
             // numLabHr
             // 
             this.numLabHr.Location = new System.Drawing.Point(182, 209);
-            this.numLabHr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numLabHr.Margin = new System.Windows.Forms.Padding(2);
             this.numLabHr.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -208,7 +208,7 @@
             // numEvoHr
             // 
             this.numEvoHr.Location = new System.Drawing.Point(452, 209);
-            this.numEvoHr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numEvoHr.Margin = new System.Windows.Forms.Padding(2);
             this.numEvoHr.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -236,7 +236,7 @@
             "1",
             "2"});
             this.cmbSem.Location = new System.Drawing.Point(452, 115);
-            this.cmbSem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbSem.Margin = new System.Windows.Forms.Padding(2);
             this.cmbSem.Name = "cmbSem";
             this.cmbSem.Size = new System.Drawing.Size(145, 21);
             this.cmbSem.TabIndex = 4;
@@ -248,7 +248,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.tblSub);
             this.panel1.Location = new System.Drawing.Point(140, 247);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(719, 282);
             this.panel1.TabIndex = 25;
@@ -259,7 +259,7 @@
             this.tblSub.AllowUserToDeleteRows = false;
             this.tblSub.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblSub.Location = new System.Drawing.Point(44, 54);
-            this.tblSub.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tblSub.Margin = new System.Windows.Forms.Padding(2);
             this.tblSub.Name = "tblSub";
             this.tblSub.ReadOnly = true;
             this.tblSub.RowHeadersWidth = 51;
@@ -288,7 +288,7 @@
             // 
             this.txtSubCode.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtSubCode.Location = new System.Drawing.Point(486, 64);
-            this.txtSubCode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSubCode.Margin = new System.Windows.Forms.Padding(2);
             this.txtSubCode.MaxLength = 4;
             this.txtSubCode.Name = "txtSubCode";
             this.txtSubCode.Size = new System.Drawing.Size(74, 20);
@@ -300,7 +300,7 @@
             // 
             this.txtDept.ForeColor = System.Drawing.Color.DarkGray;
             this.txtDept.Location = new System.Drawing.Point(452, 64);
-            this.txtDept.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDept.Margin = new System.Windows.Forms.Padding(2);
             this.txtDept.Name = "txtDept";
             this.txtDept.Size = new System.Drawing.Size(31, 20);
             this.txtDept.TabIndex = 2;
@@ -318,7 +318,7 @@
             this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
             this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDelete.Location = new System.Drawing.Point(726, 200);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(90, 33);
             this.btnDelete.TabIndex = 2;
@@ -335,8 +335,8 @@
             this.btnClear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnClear.Image = ((System.Drawing.Image)(resources.GetObject("btnClear.Image")));
             this.btnClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClear.Location = new System.Drawing.Point(820, 201);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClear.Location = new System.Drawing.Point(726, 201);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(87, 33);
             this.btnClear.TabIndex = 27;
@@ -353,7 +353,7 @@
             this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEdit.Location = new System.Drawing.Point(624, 200);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(98, 33);
             this.btnEdit.TabIndex = 1;
@@ -370,7 +370,7 @@
             this.btnSubmit.Image = ((System.Drawing.Image)(resources.GetObject("btnSubmit.Image")));
             this.btnSubmit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSubmit.Location = new System.Drawing.Point(624, 200);
-            this.btnSubmit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(2);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(98, 33);
             this.btnSubmit.TabIndex = 26;
@@ -384,7 +384,7 @@
             // 
             this.txtView.BackColor = System.Drawing.Color.LightGray;
             this.txtView.Location = new System.Drawing.Point(452, 64);
-            this.txtView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtView.Margin = new System.Windows.Forms.Padding(2);
             this.txtView.Name = "txtView";
             this.txtView.ReadOnly = true;
             this.txtView.Size = new System.Drawing.Size(109, 20);
@@ -420,7 +420,7 @@
             this.Controls.Add(this.txtSubName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelSub);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SubjectForm";
             this.Text = "Subjects";
             this.Load += new System.EventHandler(this.SubjectForm_Load);

@@ -550,7 +550,6 @@
             this.txtLecs.Location = new System.Drawing.Point(4, 23);
             this.txtLecs.Margin = new System.Windows.Forms.Padding(2);
             this.txtLecs.Name = "txtLecs";
-            this.txtLecs.ReadOnly = true;
             this.txtLecs.Size = new System.Drawing.Size(184, 20);
             this.txtLecs.TabIndex = 4;
             this.txtLecs.Validating += new System.ComponentModel.CancelEventHandler(this.txtLecs_Validating);
@@ -595,7 +594,7 @@
             this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
             this.metroTabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 3;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(941, 531);
             this.metroTabControl1.TabIndex = 2;
             this.metroTabControl1.UseSelectable = true;
